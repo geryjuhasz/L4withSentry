@@ -64,7 +64,7 @@ return array(
 	
 	'actiondelete'    => "Delete",
 	
-	'name'            => "L4withSentry",
+	'name'            => "Base Laravel",
 	
 	// 'listwith'     => "",
 	

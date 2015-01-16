@@ -18,7 +18,7 @@ Route::get('logout', array('as' => 'logout', 'uses' => 'SessionController@destro
 Route::resource('sessions', 'SessionController', array('only' => array('create', 'store', 'destroy')));
 
 // User Routes
-Route::get('register', 'UserController@create');
+//Route::get('register', 'UserController@create');
 Route::get('users/{id}/activate/{code}', 'UserController@activate')->where('id', '[0-9]+');
 Route::get('resend', array('as' => 'resendActivationForm', function()
 {
@@ -45,10 +45,7 @@ Route::resource('users', 'UserController');
 // Group Routes
 Route::resource('groups', 'GroupController');
 
-Route::get('/', array('as' => 'home', function()
-{
-	return View::make('home');
-}));
+Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getHome'));
 
 
 // App::missing(function($exception)

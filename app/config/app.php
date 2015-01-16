@@ -65,7 +65,9 @@ return array(
 	|
 	*/
 
-	'key' => 'nkBlz8KjTZ3AfiWD6Vl4Gm9gERWayz9m',
+	'key' => 'Z79AkeQCEkQ7r9KYYKyl5oY9nHHo9G4B',
+
+	'cipher' => MCRYPT_RIJNDAEL_128,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -106,10 +108,14 @@ return array(
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
+
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Authority\Repo\RepoServiceProvider',
 		'Authority\Service\Form\FormServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
+		'Artdarek\OAuth\OAuthServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
+		'Former\FormerServiceProvider',
 
 	),
 
@@ -154,12 +160,15 @@ return array(
         'Event' 		=> 'Illuminate\Support\Facades\Event',
         'File' 			=> 'Illuminate\Support\Facades\File',
         'Form' 			=> 'Illuminate\Support\Facades\Form',
+		'Former' 		=> 'Former\Facades\Former',
         'Hash' 			=> 'Illuminate\Support\Facades\Hash',
         'HTML' 			=> 'Illuminate\Support\Facades\HTML',
+		'Image' 		=> 'Intervention\Image\Facades\Image',
         'Input' 		=> 'Illuminate\Support\Facades\Input',
         'Lang' 			=> 'Illuminate\Support\Facades\Lang',
         'Log' 			=> 'Illuminate\Support\Facades\Log',
         'Mail' 			=> 'Illuminate\Support\Facades\Mail',
+		'OAuth' 		=> 'Artdarek\OAuth\Facade\OAuth',
         'Paginator' 	=> 'Illuminate\Support\Facades\Paginator',
         'Password' 		=> 'Illuminate\Support\Facades\Password',
         'Queue' 		=> 'Illuminate\Support\Facades\Queue',
@@ -176,7 +185,7 @@ return array(
         'URL' 			=> 'Illuminate\Support\Facades\URL',
         'Validator' 	=> 'Illuminate\Support\Facades\Validator',
         'View' 			=> 'Illuminate\Support\Facades\View',
-		'Sentry'		=> 'Cartalyst\Sentry\Facades\Laravel\Sentry'
+		'Sentry'		=> 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 
 	),
 
